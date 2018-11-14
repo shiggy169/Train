@@ -93,7 +93,7 @@ public class Train {
 			head = waggon;
 			head.setNext(next);
 		}else if(index >= getSize()){
-			Waggon node = getWaggonAt(index - 1);
+			Waggon node = getWaggonAt(getSize() - 1);
 			node.setNext(waggon);
 		}else{
 			Waggon prev = getWaggonAt(index - 1);
