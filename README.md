@@ -99,7 +99,7 @@ public class Train {
 			Waggon prev = getWaggonAt(index - 1);
 			Waggon next = getWaggonAt(index);
 			prev.setNext(waggon);
-			next.setNext(next);
+			waggon.setNext(next);
 		}
 	}
 
